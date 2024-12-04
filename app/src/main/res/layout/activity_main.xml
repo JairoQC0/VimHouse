@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+    <!-- Status TextView -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado: No conectado"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lexend"/>
+
+    <!-- Connect Button -->
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conectar Sistema"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lexend"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
+
+    <!-- Message Input -->
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe un mensaje"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lexend"
+        android:background="@drawable/edit_text_custom"
+        android:padding="10dp"
+        android:textColorHint="@color/gray"/>
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/btnSendCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Mensaje"
+        android:fontFamily="@font/lexend"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
